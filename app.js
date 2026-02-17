@@ -1,7 +1,7 @@
 let result = document.querySelector(".result");
 let camp = document.querySelector(".camp");
 
-function contarPalavras() {
+function wordCount() {
   let text = camp.value;
   let words = text.trim().split(/\s+/);
 
@@ -12,7 +12,7 @@ function contarPalavras() {
 
 function cleanText() {
   camp.value = "";
-  result.innerHTML = "O número de palavras é: 0";
+  result.innerHTML = "The word number is: 0";
 }
 
 function toggleTheme() {
@@ -29,4 +29,5 @@ function toggleTheme() {
   }
 }
 
-camp.addEventListener("input", contarPalavras);
+
+camp.addEventListener("input", wordCount);
